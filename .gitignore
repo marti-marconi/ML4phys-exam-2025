@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+.venv/
+.ipynb_checkpoints/
+logs/
+artifacts/
+data/
+*.h5
+.DS_Store
+.vscode/
