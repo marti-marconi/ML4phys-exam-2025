@@ -6,5 +6,6 @@ logs/
 artifacts/
 data/
 *.h5
+*.out
 .DS_Store
 .vscode/
