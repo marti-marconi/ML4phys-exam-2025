@@ -48,5 +48,15 @@ For long-running training sessions, use the provided script:
 
 ## Repo structure
 
+```text
+.
+├── artifacts/       # Saved models (.keras) and training metrics (JSON)
+├── data/            # Galaxy10.h5 dataset (not tracked by git)
+├── logs/            # Training logs with timestamps (not very interesting but ok)
+├── notebooks/       # Jupyter notebooks
+├── src/             # Python scripts and shell utilities
+├── README.md        # Project documentation
+└── requirements.txt # Python dependencies
+
 
 
