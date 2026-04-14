@@ -1,9 +1,7 @@
 __pycache__/
-*.pyc
+.vscode/
 .venv/
 .ipynb_checkpoints/
-logs/
 *.h5
 *.out
-.DS_Store
-.vscode/
+*.pyc
