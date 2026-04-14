@@ -1,0 +1,11 @@
+{
+  "accuracy": 0.7613219094247246,
+  "balanced_accuracy": 0.6682396876580172,
+  "macro_f1": 0.6172528790440314,
+  "weighted_f1": 0.7521449251370995,
+  "epochs_ran": 75,
+  "final_train_loss": 0.6062943339347839,
+  "final_val_loss": 0.6718957424163818,
+  "final_train_accuracy": 0.7080936431884766,
+  "final_val_accuracy": 0.7646878957748413
+}
