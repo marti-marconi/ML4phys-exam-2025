@@ -2,6 +2,8 @@
 
 This repository contains the implementation for the morphological classification of galaxies using the Galaxy10 SDSS dataset as solution for the ML exam: https://github.com/ML4PhysicsTeachingGenova/exam_2025
 
+**Solution in `notebooks/classifier.ipynb`** (https://github.com/marti-marconi/ML4phys-exam-2025/blob/main/notebooks/classifier.ipynb)
+
 ---
 
 ## Setup and installation
@@ -59,7 +61,7 @@ For long-running training sessions, use the provided script:
 └── requirements.txt # Python dependencies
 ```
 
-The real interesting thing is the notebook `notebooks/classifier.ipynb`. The scripts in `\src` were usefull to me to better organize myself, accelerate the workflow, and solve some computing issues.
+The real interesting thing is the notebook `notebooks/classifier.ipynb`. The scripts in `\src` were usefull to me to better organize myself, accelerate the workflow, and solve some computing issues. In `notebooks/classifier?.html` one can find some tests I did to optimize the model.
 
 ---
 
