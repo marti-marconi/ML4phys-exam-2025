@@ -70,14 +70,15 @@ def build_model(num_classes: int) -> tf.keras.Model:
             tf.keras.layers.Activation("relu"),
             tf.keras.layers.MaxPooling2D((2, 2)),
             tf.keras.layers.Dropout(0.25),
-            tf.keras.layers.Flatten(),
+            #tf.keras.layers.Flatten(),
+            tf.keras.layers.GlobalAveragePooling2D(),
             tf.keras.layers.Dense(256, activation="relu"),
             tf.keras.layers.Dropout(0.5),
             tf.keras.layers.Dense(num_classes, activation="softmax"),
         ]
     )
     model.compile(
-        optimizer=tf.keras.optimizers.Adam(learning_rate=5e-5),
+        optimizer=tf.keras.optimizers.Adam(learning_rate=1e-4),
         loss=tf.keras.losses.CategoricalCrossentropy(from_logits=False),
         metrics=["accuracy"],
     )
@@ -234,7 +235,7 @@ def main() -> None:
 
     callbacks = [
         val_metrics_cb,
-        EarlyStopping(monitor="val_loss", patience=8, restore_best_weights=True, verbose=1),
+        EarlyStopping(monitor="val_loss", patience=12, restore_best_weights=True, verbose=1),
         ReduceLROnPlateau(monitor="val_loss", factor=0.3, patience=4, min_lr=1e-6, verbose=1),
     ]
 
