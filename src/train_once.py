@@ -46,7 +46,7 @@ def build_model(num_classes: int) -> tf.keras.Model:
     model = tf.keras.Sequential(
         [
             tf.keras.layers.Input(shape=(69, 69, 3)),
-            tf.keras.layers.Conv2D(32, (5, 5), padding="same", kernel_initializer="he_normal"),
+            tf.keras.layers.Conv2D(32, (5, 5), padding="same", kernel_initializer="he_normal", use_bias=True),
             tf.keras.layers.BatchNormalization(),
             tf.keras.layers.Activation("relu"),
             tf.keras.layers.Conv2D(32, (3, 3), padding="same", kernel_initializer="he_normal"),
@@ -211,7 +211,7 @@ def main() -> None:
         0: {"rotations": False, "flips": False},
         1: {"rotations": False, "flips": False},
         2: {"rotations": False, "flips": False},
-        3: {"rotations": False, "flips": False},
+        3: {"rotations": True, "num_rotations": 3, "flips": True, "num_flips": 3},
         4: {"rotations": False, "flips": False},
         5: {"rotations": True, "num_rotations": 3, "flips": True, "num_flips": 3},
         6: {"rotations": False, "flips": False},
