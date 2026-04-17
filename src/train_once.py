@@ -211,7 +211,7 @@ def main() -> None:
         0: {"rotations": False, "flips": False},
         1: {"rotations": False, "flips": False},
         2: {"rotations": False, "flips": False},
-        3: {"rotations": True, "num_rotations": 3, "flips": True, "num_flips": 3},
+        3: {"rotations": False, "flips": False},
         4: {"rotations": False, "flips": False},
         5: {"rotations": True, "num_rotations": 3, "flips": True, "num_flips": 3},
         6: {"rotations": False, "flips": False},
