@@ -62,6 +62,7 @@ For long-running training sessions, use the provided script:
 ```
 
 The real interesting thing is the notebook `notebooks/classifier.ipynb`. The scripts in `\src` were usefull to me to better organize myself, accelerate the workflow, and solve some computing issues. 
+
 ---
 
 ## Author 
