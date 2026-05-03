@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
-# run_train.sh — generic launcher for any train_once*.py script.
+# run_train.sh — launcher for any train_once*.py script
 #
 # Usage:
-#   bash run_train.sh train_once_old1.py
-#   bash run_train.sh train_once_old1.py --cpus 8 --mem 16 --time 20000
-#   FORCE_RETRAIN=1 bash run_train.sh train_once_old1.py
+#   bash run_train.sh train_once.py
+#   bash run_train.sh train_once.py --cpus 8 --mem 16 --time 20000
+#   FORCE_RETRAIN=1 bash run_train.sh train_once.py
 #
 # Options:
 #   --cpus  N   CPU cores to allow (CPUQuota = N*100%)  [default: 15]

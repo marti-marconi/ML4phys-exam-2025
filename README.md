@@ -30,13 +30,13 @@ To run the notebooks in the `notebooks/` directory, you must link the virtual en
 pip install ipykernel
 python -m ipykernel install --user --name=galaxy_env --display-name "galaxy_env"
 ```
-Then open the notebook and select the proper kernel.
+Then open the notebook and select the proper kernel. Then ready to use the script
 
 ### 3. Training Scripts
 For long-running training sessions, use the provided script:
 
-- `train_once.py`: main training logic
-- `run_train_once.sh`: shell script to launch the training (useful for nohup or cluster submissions)
+- `src/train_once.py`: main training logic
+- `src/run_train.sh`: shell script to launch the training on frontend limitating CPU and memory usage to not paralize everyone
 
 ---
 
@@ -54,15 +54,14 @@ For long-running training sessions, use the provided script:
 .
 ├── artifacts/       # Saved models (.keras) and training metrics (JSON)
 ├── data/            # Galaxy10.h5 dataset (not tracked by git)
-├── logs/            # Training logs with timestamps (not very interesting but ok)
+├── logs/            # Training logs with timestamps (not very interesting but ok, not tracked anymore)
 ├── notebooks/       # Jupyter notebooks
 ├── src/             # Python scripts and shell utilities
 ├── README.md        # Project documentation
 └── requirements.txt # Python dependencies
 ```
 
-The real interesting thing is the notebook `notebooks/classifier.ipynb`. The scripts in `\src` were usefull to me to better organize myself, accelerate the workflow, and solve some computing issues. In `notebooks/classifier?.html` one can find some tests I did to optimize the model.
-
+The real interesting thing is the notebook `notebooks/classifier.ipynb`. The scripts in `\src` were usefull to me to better organize myself, accelerate the workflow, and solve some computing issues. 
 ---
 
 ## Author 
