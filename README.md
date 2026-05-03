@@ -2,7 +2,7 @@
 
 This repository contains the implementation for the morphological classification of galaxies using the Galaxy10 SDSS dataset as solution for the ML exam: https://github.com/ML4PhysicsTeachingGenova/exam_2025
 
-**Solution in `notebooks/classifier.ipynb`** (https://github.com/marti-marconi/ML4phys-exam-2025/blob/main/notebooks/classifier.ipynb)
+**Solution in `notebooks/classifier.ipynb`**
 
 ---
 
